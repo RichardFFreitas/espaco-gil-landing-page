@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Clock, Instagram, MessageCircle } from 'lucide-react';
+import { createWhatsAppLink, whatsAppMessages } from '@/lib/whatsapp';
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-sm">Consultório próprio</span>
+                <span className="text-sm">R. Cap. Silveira, QD 30 - LT 35 - Cidade Beira Mar, Rio das Ostras - RJ</span>
               </div>
             </div>
           </div>
@@ -92,14 +93,14 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex gap-4">
-              <button className="hero-button flex items-center gap-2">
+              <a href={createWhatsAppLink(whatsAppMessages.footer)} target="_blank" rel="noopener noreferrer" className="hero-button flex items-center gap-2">
                 <MessageCircle className="h-4 w-4" />
                 WhatsApp
-              </button>
-              <button className="secondary-button flex items-center gap-2">
+              </a>
+              <a href="tel:22998527632" className="secondary-button flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 Ligar
-              </button>
+              </a>
             </div>
           </div>
         </div>

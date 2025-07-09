@@ -1,4 +1,5 @@
 import { Scissors, Droplets, Wrench, Heart, Shield, Activity } from 'lucide-react';
+import { createWhatsAppLink, whatsAppMessages } from '@/lib/whatsapp';
 
 const ServicesSection = () => {
   const services = [
@@ -122,9 +123,9 @@ const ServicesSection = () => {
           <p className="text-muted-foreground mb-6">
             Cada paciente é único. Entre em contato para descobrir qual tratamento é ideal para você.
           </p>
-          <button className="hero-button">
+          <a href={createWhatsAppLink(whatsAppMessages.services)} target="_blank" rel="noopener noreferrer" className="hero-button">
             Consultar Especialista
-          </button>
+          </a>
         </div>
       </div>
     </section>

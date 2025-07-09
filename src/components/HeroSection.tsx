@@ -1,4 +1,5 @@
 import { Star, Phone, Clock, MapPin } from 'lucide-react';
+import { createWhatsAppLink, whatsAppMessages } from '@/lib/whatsapp';
 
 const HeroSection = () => {
   return (
@@ -32,10 +33,10 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="hero-button flex items-center gap-2">
+              <a href={createWhatsAppLink(whatsAppMessages.hero)} target="_blank" rel="noopener noreferrer" className="hero-button flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 Agende Sua Consulta
-              </button>
+              </a>
               <button className="secondary-button">
                 Conheça Nossos Serviços
               </button>

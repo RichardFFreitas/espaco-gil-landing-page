@@ -1,4 +1,5 @@
 import { Phone, MessageCircle, Clock, MapPin } from 'lucide-react';
+import { createWhatsAppLink, whatsAppMessages } from '@/lib/whatsapp';
 
 const CTASection = () => {
   return (
@@ -66,14 +67,14 @@ const CTASection = () => {
               </div>
               
               <div className="flex flex-col gap-3">
-                <button className="hero-button w-full flex items-center justify-center gap-2">
+                <a href={createWhatsAppLink(whatsAppMessages.cta)} target="_blank" rel="noopener noreferrer" className="hero-button w-full flex items-center justify-center gap-2">
                   <MessageCircle className="h-5 w-5" />
                   Agendar pelo WhatsApp
-                </button>
-                <button className="secondary-button w-full flex items-center justify-center gap-2">
+                </a>
+                <a href="tel:22998527632" className="secondary-button w-full flex items-center justify-center gap-2">
                   <Phone className="h-5 w-5" />
                   Ligar Agora
-                </button>
+                </a>
               </div>
             </div>
           </div>
