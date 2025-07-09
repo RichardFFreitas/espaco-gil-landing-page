@@ -60,7 +60,7 @@ const HowItWorksSection = () => {
               </div>
               
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-px bg-gradient-to-r from-primary to-secondary"></div>
+                <div className="hidden lg:block absolute top-1/2 -right-6 w-4 h-px bg-gradient-to-r from-primary to-secondary"></div>
               )}
             </div>
           ))}

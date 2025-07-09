@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# Espaço Gil - Landing Page
 
-## Project info
+Landing page profissional para o consultório de podologia da Gilcilene Pereira, desenvolvida para apresentar serviços, depoimentos, informações de contato e facilitar o agendamento de consultas via WhatsApp.
 
-**URL**: https://lovable.dev/projects/bad10c36-28d0-4a29-894d-0df35647b561
+## ✨ Demonstração
 
-## How can I edit this code?
+Acesse: [https://espaco-gil.com.br](https://espaco-gil-landing-page.vercel.app)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 📋 Descrição
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bad10c36-28d0-4a29-894d-0df35647b561) and start prompting.
+Este projeto é uma landing page moderna, responsiva e otimizada para conversão, com foco em:
 
-Changes made via Lovable will be committed automatically to this repo.
+- Apresentação dos serviços de podologia
+- Depoimentos reais de clientes
+- Chamada para ação (CTA) com agendamento facilitado via WhatsApp
+- Informações de contato, localização e horários
+- Seção de perguntas frequentes (FAQ)
+- Visual profissional, acessível e adaptado para dispositivos móveis
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Tecnologias Utilizadas
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/) (componentes UI)
+- [Lucide Icons](https://lucide.dev/) (ícones SVG)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Estrutura do Projeto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+  components/      # Componentes React reutilizáveis
+  lib/             # Funções utilitárias (ex: integração WhatsApp)
+  pages/           # Páginas principais do site
+  App.tsx          # Componente principal
+  main.tsx         # Ponto de entrada da aplicação
+public/
+  imagem-hero.jpg  # Imagem principal do Hero
+  favicon.ico      # Ícone do site
+  ...
+tailwind.config.js # Configuração do Tailwind CSS
+vite.config.ts     # Configuração do Vite
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📱 Contato
 
-**Use GitHub Codespaces**
+- **WhatsApp:** [22 99852-7632](https://wa.me/5522998527632)
+- **Instagram:** [@espaco_gil](https://instagram.com/espaco_gil)
+- **Endereço:** R. Cap. Silveira, QD 30 - LT 35 - Cidade Beira Mar, Rio das Ostras - RJ
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bad10c36-28d0-4a29-894d-0df35647b561) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
