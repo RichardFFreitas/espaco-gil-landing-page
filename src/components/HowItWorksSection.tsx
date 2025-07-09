@@ -1,3 +1,4 @@
+import { createWhatsAppLink, whatsAppMessages } from '@/lib/whatsapp';
 import { Phone, Calendar, Stethoscope, CheckCircle } from 'lucide-react';
 
 const HowItWorksSection = () => {
@@ -74,9 +75,14 @@ const HowItWorksSection = () => {
               O processo é simples e rápido. Em poucos minutos você já terá sua consulta agendada.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="hero-button">
+              <a
+                href={createWhatsAppLink(whatsAppMessages.cta)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-button flex items-center justify-center gap-2"
+              >
                 Agendar por WhatsApp
-              </button>
+              </a>
               <button className="secondary-button">
                 Conhecer Todos os Serviços
               </button>

@@ -1,3 +1,4 @@
+import { createWhatsAppLink, whatsAppMessages } from '@/lib/whatsapp';
 import { Star, Quote } from 'lucide-react';
 
 const TestimonialsSection = () => {
@@ -95,9 +96,14 @@ const TestimonialsSection = () => {
             <p className="text-muted-foreground mb-6">
               Não deixe problemas nos pés afetarem sua qualidade de vida. Agende sua consulta hoje mesmo.
             </p>
-            <button className="hero-button">
+            <a
+              href={createWhatsAppLink(whatsAppMessages.hero)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-button flex items-center justify-center gap-2"
+            >
               Quero Agendar Agora
-            </button>
+            </a>
           </div>
         </div>
       </div>

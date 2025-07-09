@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { createWhatsAppLink, whatsAppMessages } from '@/lib/whatsapp';
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -76,12 +77,22 @@ const FAQSection = () => {
               Entre em contato conosco. Estamos sempre prontos para esclarecer qualquer questão sobre nossos tratamentos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="hero-button">
+              <a
+                href={createWhatsAppLink(whatsAppMessages.footer)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-button flex items-center justify-center gap-2"
+              >
                 Tirar Dúvida pelo WhatsApp
-              </button>
-              <button className="secondary-button">
+              </a>
+              <a
+                href={createWhatsAppLink(whatsAppMessages.hero)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="secondary-button flex items-center justify-center gap-2"
+              >
                 Agendar Consulta
-              </button>
+              </a>
             </div>
           </div>
         </div>
